@@ -1,0 +1,286 @@
+@font-face{
+    font-family: TrebucheMS;
+    src: url(fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url(fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url(fonts/websymbols-regular-webfont.eot);
+    src: url(fonts/websymbols-regular-webfont.eot?#iefix) format("embedded"),
+        url(fonts/websymbols-regular-webfont.woff) format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+
+/* GENERALES */
+
+.gear, .icon{
+    font-family: WebSymbolsRegular;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(img/pattern.png);
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* Cabecera */
+
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: BebasNeue;
+    color: white;
+}
+#logo{
+    float: left;
+    width: 200px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #37bdf9;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-left: 20px;
+    transition: all 300ms;
+}
+#logo .gear{
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 26px;
+}
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+}
+#menu{
+    float: right;
+    height: 70px;
+    background-color: transparent;
+}
+
+#menu ul li {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    line-height: 70px;
+}
+
+#menu ul li a {
+    display: block;
+    color: white;
+    transition: all 300ms;
+}
+
+#menu ul li a:hover {
+    color: #37bcf9;
+    transform: scale(1.2, 1.2);
+}
+
+/* Banner */
+
+#banner {
+    width: 95.5%;
+    height: 100px;
+    background: url(img/bakbaner.png);
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background-position: -200px -200px;
+    color: white;
+    margin-top: 20px;
+}
+
+#banner h1 {
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100px;
+    text-shadow: 3px 3px 5px tan;
+}
+
+/* CARDS */
+
+.card{
+    float: left;
+    width: 206px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    margin: 14px;
+    margin-top: 71px;
+    cursor: pointer;
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0 auto;
+}
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c;
+}
+
+.card .description{
+    text-align: center;
+    color: #0374c0;
+    font-size: 15px;
+    font-family: 'TrebucheMS';
+}
+
+/* Barra lateral */
+
+#lateral{
+    width: 300px;
+    min-height: 1200px;
+    font-family: 'Trebuchet MS';
+    float: right;
+    margin-right: 20px;
+}
+
+#lateral h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background: url(img/pxgray.png), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,3px 4px 0px #393d3f;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+#search{
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+#lateral input[type="text"]{
+    width: 85%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+    transition: all 300ms;
+}
+#lateral input[type="text"]:focus{
+    color: #555;
+}
+#lateral input[type="button"],
+#lateral input[type="submit"]{
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #555;
+    padding-left: 6px;
+}
+
+
+.aside-box{
+    width: 85%;
+    height: 240px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background: white;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3 )inset; 
+}
+
+#login input[type="email"],
+#login input[type="password"]{
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius:  5px;
+    padding-left: 30px;
+    color: gray;
+    transition: all 300ms;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus{
+    color: rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px grey inset;
+}
+
+
+#login #user,
+#login #password{
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 30px;
+}
+#login #password{
+    margin-left: 18px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
